@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: darkblue;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #333;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+form {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: navy;
+    color: black;
+}
+
+/* Dark Theme */
+.dark-theme {
+    background-color: #222;
+    color: #eee;
+}
+
+.dark-theme nav {
+    background-color: #555;
+}
+
+.dark-theme nav a {
+    color: white;
+}
+
+.dark-theme table, 
+.dark-theme th, 
+.dark-theme td {
+    border: 1px solid #888;
+}
+
+.dark-theme form {
+    background-color: #333;
+    color: #eee;
+}
+
+/* Responsive nav */
+@media screen and (max-width: 600px) {
+nav {
+        flex-direction: column;
+        align-items:center;}
+}
