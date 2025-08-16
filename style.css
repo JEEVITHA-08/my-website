@@ -1,110 +1,70 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  transition: background 0.3s, color 0.3s;
 }
 
-header h1 {
-    text-align: center;
-    font-family: 'Trebuchet MS', sans-serif;
-    color: darkblue;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    background-color: #333;
-    padding: 10px;
-    flex-wrap: wrap;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-nav a:hover {
-    background-color: #555;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ccc;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-form {
-    background-color: white;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    max-width: 400px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0 10px;
-    border: 1px solid skyblue;
-    border-radius: 5px;
-}
-
-button {
-    background-color: darkblue;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: navy;
-    color: black;
-}
-
-/* Dark Theme */
+/* Dark theme */
 .dark-theme {
-    background-color: #222;
-    color: #eee;
+  background: #222;
+  color: #fff;
 }
 
-.dark-theme nav {
-    background-color: #555;
+/* Header */
+header h1 {
+  text-align: center;
+  font-family: "Georgia", serif;
+  color: darkblue;
 }
 
-.dark-theme nav a {
-    color: white;
+/* Nav */
+nav {
+  text-align: center;
+  margin: 10px 0;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: blue;
+}
+nav a:hover {
+  color: darkred;
+  text-decoration: underline;
 }
 
-.dark-theme table, 
-.dark-theme th, 
-.dark-theme td {
-    border: 1px solid #888;
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table th, table td {
+  padding: 8px;
+  text-align: center;
+}
+table tbody tr:nth-child(even) {
+  background: #f2f2f2;
 }
 
-.dark-theme form {
-    background-color: #333;
-    color: #eee;
+/* Form */
+form {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
 }
 
 /* Responsive nav */
-@media screen and (max-width: 600px) {
-nav {
-        flex-direction: column;
-        align-items:center;}
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  nav a {
+    margin: 5px 0;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
